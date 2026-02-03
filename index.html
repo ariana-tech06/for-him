@@ -118,10 +118,10 @@ h1{
 
 <!-- QUESTION PAGE -->
 <div id="home" class="page">
-    <h1>Will you be my Valentine? 💌</h1>
+    <h1>Will you be my Valentine, Ankan? 💌</h1>
     <div>
         <button class="btn yes" onclick="showYes()">Yes 💖</button>
-        <button class="btn forever" onclick="showForever()">Forever ♾️</button>
+        <button class="btn  forever" onclick="showForever()">Forever ♾️</button>
     </div>
 </div>
 
@@ -137,37 +137,45 @@ h1{
 
 
 <!-- 🎵 MUSIC (replace with any mp3 link if you want) -->
-<audio id="music" loop>
-    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9b7b8e.mp3" type="audio/mpeg">
-</audio>
+
 
 
 <script>
 
 /* ===== YOUR PARAGRAPHS ===== */
 const yesMsg =
-`Write your cute sweet paragraph here.
-Talk about memories, smiles, silly fights, everything ❤️`;
+`since you pressed "yes," i wonder why not forever because even when you're pressing, "yes" means you have to be my VALENTINES every year, so it's the same as forever 😋
+okay, now let's come to the main point, HAPPY VALENTINE'S DAY ANKAN ❤️
+it's our 4th year, we are celebrating, and im still as excited as i was in our first year. we have grown together, many many mistakes then again corrected each other, learned so much together and many more. i know i've said this many times, but i'll say it again and again that IM SO GLAD TO HAVE YOU IN MY LIFE 🫶🏼 because it's the fact. i hope that, like our 4 years we spent, we get to spend another 40 years together like this, and i can't wait to share my every moment of my life with you. i just hope you always be safe and healthy because i can't think my life without you and yea misunderstandings and fights will be there, but i hope we solve our disputes and stick to each other in future as well.
+I LOVE YOU BEYOND THE UNIVERSE ANKAN😚✨❤️🌻🫀💖💕💗🫶🏼`;
 
 const foreverMsg =
-`Write your deep emotional forever promise here.
-Future dreams, staying together, loving forever ♾️`;
+`YAYYY, it's a good thing that you chose "forever." i expected you to choose forever only, and also, hehe, there's no "NO" option. what did you think, huh?? you don't have any option called "no" here and in real life, too 😋
+well yea
+HAPPY VALENTINE'S DAY, ANKAN ❤️
+im just so happy that it's our 4th year. can you believe?? like we, it's our 4th time celebrating. omggggg!!
+IM SO GLAD TO SHARE MY LIFE WITH YOU 💗 and in case you wonder how much important you're to me, then let me tell you that YOU DON'T HAVE ANY IDEA HOW MUCH YOU'RE IMPORTANT TO ME ✨ . in the past 3 years, we did everything together— made mistakes, corrected ourselves, felt many emotions, explored new places and foods, made favorite foods list, cried together, laughed together, and many more. i hope god protects our bond from every evil eye, and we stay like this for the next 40 years and more. i hope i get to spend my whole life with you and create an amazing future together. anyways, said too many emotional lines, but yea BABY YOU'RE THE ONLY ADDICTION I WANT FOREVER IN MY LIFE 💋
+I LOVE YOU SO FUCKING AND INSANELY MUCH ANKAN 😚✨❤️🌻🫀💗💖💕🫶🏼`;
 
 
 /* ===== PAGE SWITCH ===== */
+
 function hideAll(){
-    document.querySelectorAll(".page").forEach(p=>p.style.display="none");
+    document.querySelectorAll(".page").forEach(p=>{
+        p.style.display = "none";
+    });
 }
+
 
 function openLetter(){
     hideAll();
     document.getElementById("home").style.display="flex";
-    document.getElementById("music").play();
 }
 
 function showYes(){
     hideAll();
     document.getElementById("yesPage").style.display="flex";
+
     typeText("yesText", yesMsg);
     confetti();
     hearts();
@@ -176,10 +184,14 @@ function showYes(){
 function showForever(){
     hideAll();
     document.getElementById("foreverPage").style.display="flex";
+
     typeText("foreverText", foreverMsg);
     confetti();
     hearts();
 }
+
+
+
 
 
 /* ===== TYPING EFFECT ===== */
@@ -229,3 +241,5 @@ function confetti(){
 
 </body>
 </html>
+
+
